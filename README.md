@@ -73,21 +73,21 @@ export { default } from './BeautifulButton';
 modules
 |
 └─── users-list
-| UsersList.tsx
-| index.ts
-└─── components
-|
-└─── UsersTable
-| UsersTable.tsx
-| index.ts
-└─── components
-|
-└─── UsersTableBody
-| UsersTableBody.tsx
-| index.ts
-└─── components
-| Row.tsx
-| RowHeader.tsx
+    | UsersList.tsx
+    | index.ts
+    └─── components
+        |
+        └─── UsersTable
+            | UsersTable.tsx
+            | index.ts
+            └─── components
+                |
+                └─── UsersTableBody
+                    | UsersTableBody.tsx
+                    | index.ts
+                    └─── components
+                        | Row.tsx
+                        | RowHeader.tsx
 ```
 
 :white_check_mark: Right
@@ -96,14 +96,16 @@ modules
 modules
 |
 └─── users-list
-| UsersList.tsx
-| index.ts
-└─── components
-|
-| UsersTable
-| UsersTableBody
-| RowHeader
+    | UsersList.tsx
+    | index.ts
+    └─── components
+        |
+        | UsersTable
+        | UsersTableBody
+        | RowHeader
 ```
+
+- Keep assets in **assets** folder, export all assets from *index.ts* file.
 
 ## Coding style
 
