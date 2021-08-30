@@ -30,8 +30,8 @@ You can find any info about used technologies on it's official site.
 components
 |
 └─── BeautifulButton
-| BeautifulButton.tsx
-| index.ts
+    | BeautifulButton.tsx
+    | index.ts
 ```
 
 index.ts
