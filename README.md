@@ -34,9 +34,9 @@ components
     | index.ts
 ```
 
-index.ts
+ex. *index.ts*
 
-```js
+```ts
 export { default } from './BeautifulButton';
 ```
 
@@ -64,8 +64,21 @@ export { default } from './BeautifulButton';
 
 - Add your configs in _config/Config.ts_ file
 - Sensative configs need to be added into **.env** file and mapped to _config/Config.ts_ file (to access env use `import.meta.env`) , also add env variables into **env.d.ts** `interface ImportMetaEnv`.
+- Keep assets in **assets** folder, export all assets from *index.ts* file.
+- For exotic file types u can find [Vite plugin](https://vitejs.dev/guide/api-plugin.html#plugins-config) to load file. Also you need to add *.d.ts* file with module declaration in **typings** folder.
 
-\*note: **Do not nest your files to much**
+ex.
+*typings/**md.d.ts***
+
+```ts
+declare module '*.md' {
+    const data:string;
+
+    export default data
+}
+```
+
+:warning: note: **Do not nest your files to much**
 
 :x: WRONG
 
@@ -90,7 +103,7 @@ modules
                         | RowHeader.tsx
 ```
 
-:white_check_mark: Right
+:ballot_box_with_check: Right
 
 ```md
 modules
@@ -105,7 +118,6 @@ modules
         | RowHeader
 ```
 
-- Keep assets in **assets** folder, export all assets from *index.ts* file.
 
 ## Coding style
 
@@ -113,9 +125,13 @@ modules
 
 Configure your IDE you work with eslint and prettier.
 
-- Use **camelCase** in most cases.
-- Use **kebab-case** for module folders names.
+- Use :burrito: **kebab-case** for module folders names.
+- Use :parking: **PascalCase** for component file names and component names.
+- Use :snake: **SNAKE_CASE_UPPER_CASE** for static constant variables.
+- Use :camel: **camelCase** in other cases.
 - Always format document before commit and check for eslint warnings.
 - For styling you can use anything u want for project , but if you use **CSS in JS**` **JSS** , keep stylings in separate file.
 - Use React functional components and hooks.
 - Eslint fully configured , so just follow eslint notations to keep good coding style :slightly_smiling_face:.
+
+## Good Luck :sun_with_face:|
