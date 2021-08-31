@@ -6,10 +6,6 @@ A starter for React with Typescript with the fast Vite and all static code testi
 
 Clone the repo and run `yarn install`
 
-## Start
-
-After the successfull installation of the packages: `yarn start`
-
 ## Included technologies
 
 You can find any info about used technologies on it's official site.
