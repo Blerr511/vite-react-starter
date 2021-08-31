@@ -1,14 +1,11 @@
 # :fire::rocket::zap: Vite + React + Redux(@reduxjs/toolkit) + Typescript
 
 A starter for React with Typescript with the fast Vite and all static code testing with Eslint and formatting with Prettier.
+Also checkout [create-react-app](https://github.com/Blerr511/cra-starter) version of this setup.
 
 ## Installation
 
 Clone the repo and run `yarn install`
-
-## Start
-
-After the successfull installation of the packages: `yarn start`
 
 ## Included technologies
 
